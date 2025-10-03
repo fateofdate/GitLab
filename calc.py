@@ -50,8 +50,16 @@ class Cargo:
     def __len__(self) -> int:
         return self.__attr_map.__len__()
     
-
-
+    def keys(self) -> list:
+        return list(self.__attr_map.keys())
+    
+    def values(self) -> list:
+        return list(self.__attr_map.values())
+    
+    def items(self) -> list:
+        return list(self.__attr_map.items())
+    
+    
 
 class CManager:
     def __init__(self) -> None:
